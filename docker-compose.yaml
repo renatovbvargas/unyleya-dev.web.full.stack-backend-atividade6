@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:5.6.51
+    container_name: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./mysql/init.sql:/data/application/init.sql
+      - "./mysql/mysql:/var/lib/mysql"
+    ports:
+      - "3306:3306"
+
+networks:
+  default:
+    external:
+      name: unyleya-net
