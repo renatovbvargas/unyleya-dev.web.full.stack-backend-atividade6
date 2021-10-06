@@ -3,9 +3,12 @@
 ## Iniciar
 
 ### Com Docker
+    startMySQL.bat
     start.bat
 
-### Sem o Docker *(Precisa do MySQL instalado e rodando na porta 3306)*
+### Sem o Docker 
+* Instalar MySQL
+* Iniciar o serviço do MySQL
 * Criar o banco de dados cidadao no MySQL *(mysql/init.sql tem o comando)*.
     
     java -jar cidadao-0.0.1-SNAPSHOT.jar
