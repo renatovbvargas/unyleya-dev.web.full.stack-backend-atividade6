@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+cidadao/*.jar
 *.war
 *.nar
 *.ear
